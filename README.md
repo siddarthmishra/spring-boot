@@ -44,6 +44,7 @@ mvn spring-boot:run
 
 [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
 * [Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.details)
+* [JPA Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods)
 
 [JpaRepository Docs](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html)
 
@@ -60,7 +61,7 @@ mvn spring-boot:run
 	
 ##### Pagination
 * Default page size is 20
-* Pages are zero based
+* Pages are zero index based
 * To navigate page 
     * [http://localhost:8080/employees?page=0](http://localhost:8080/employees?page=0)
     * [http://localhost:8080/employees?page=1](http://localhost:8080/employees?page=1)
