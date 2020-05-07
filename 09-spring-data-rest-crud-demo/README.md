@@ -43,7 +43,7 @@ In Employee,we have firstName, lastName and email
 
 ---
 
-###### The HAL Browser
+##### The HAL Browser
 
 [The HAL Browser](https://docs.spring.io/spring-data/rest/docs/current/reference/html/#tools)
 * Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
