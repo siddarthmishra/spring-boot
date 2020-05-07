@@ -39,13 +39,13 @@ In Employee,we have firstName, lastName and email
 
 ---
 
-[Adding Custom Details to Your ALPS Descriptions](https://docs.spring.io/spring-data/rest/docs/3.2.7.RELEASE/reference/html/#metadata.alps.descriptions)
+[Adding Custom Details to Your ALPS Descriptions](https://docs.spring.io/spring-data/rest/docs/current/reference/html/#metadata.alps.descriptions)
 
 ---
 
 ###### The HAL Browser
 
-[The HAL Browser](https://docs.spring.io/spring-data/rest/docs/3.2.7.RELEASE/reference/html/#tools)
+[The HAL Browser](https://docs.spring.io/spring-data/rest/docs/current/reference/html/#tools)
 * Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
 
 <img src="src/main/resources/static/images/HAL_Explorer_1.PNG" width="900" height="450">
