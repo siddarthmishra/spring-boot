@@ -14,6 +14,7 @@ These are the same SQL scripts used in the course.
 
 - setup-spring-security-bcrypt-demo-database.sql: Creates login accounts with encrypted passwords
 
+~~~
 +---------+----------+-----------------------------+
 | user id | password |            roles            |
 +---------+----------+-----------------------------+
@@ -21,7 +22,7 @@ These are the same SQL scripts used in the course.
 | mary    | fun123   | ROLE_EMPLOYEE, ROLE_MANAGER |
 | susan   | fun123   | ROLE_EMPLOYEE, ROLE_ADMIN   |
 +---------+----------+-----------------------------+
-
+~~~
 
 
 MAVEN PROJECT UPDATES
@@ -293,6 +294,7 @@ TEST THE APPLICATION
 
 3. Log in using one of the accounts
 
+~~~
 +---------+----------+-----------------------------+
 | user id | password |            roles            |
 +---------+----------+-----------------------------+
@@ -300,6 +302,7 @@ TEST THE APPLICATION
 | mary    | fun123   | ROLE_EMPLOYEE, ROLE_MANAGER |
 | susan   | fun123   | ROLE_EMPLOYEE, ROLE_ADMIN   |
 +---------+----------+-----------------------------+
+~~~
 
 4. Confirm that you can login and access data based on the roles.
 
