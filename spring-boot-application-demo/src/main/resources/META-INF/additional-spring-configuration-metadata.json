@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "introducer.default.page-number",
+    "type": "java.lang.Integer",
+    "description": "The default page number for pagination"
+  },
+  {
+    "name": "introducer.default.page-size",
+    "type": "java.lang.Integer",
+    "description": "The default page size for pagination"
+  },
+  {
+    "name": "introducer.default.sort-by",
+    "type": "java.lang.String",
+    "description": "The default value for order by"
+  }
+]}
