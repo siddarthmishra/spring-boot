@@ -16,3 +16,7 @@
 7. Constraint validations from `jakarta.validation`
 8. `@RestControllerAdvice` and `@ExceptionHandler` for custom exception handler from Spring Framework
 9. Oracle Database
+10. REST Caching Techniques
+	- [Caching REST API Response](https://restfulapi.net/caching/)
+	- [Understanding and Implementing ETags in REST APIs](https://medium.com/@reetesh043/understanding-and-implementing-etags-in-rest-apis-659abe0f91ab)
+11. [Spring Boot - Versioning a REST API](https://www.geeksforgeeks.org/spring-boot-versioning-a-rest-api/) - not used for now

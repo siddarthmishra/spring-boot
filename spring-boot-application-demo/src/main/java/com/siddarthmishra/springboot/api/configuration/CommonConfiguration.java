@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.filter.ShallowEtagHeaderFilter;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -51,4 +52,10 @@ public class CommonConfiguration {
 		return objectMapper;
 	}
 
+	// Caching using ETag (Entity Tag)
+	// https://medium.com/@reetesh043/understanding-and-implementing-etags-in-rest-apis-659abe0f91ab
+	@Bean
+	ShallowEtagHeaderFilter shallowEtagHeaderFilter() {
+		return new ShallowEtagHeaderFilter();
+	}
 }
