@@ -20,3 +20,7 @@
 	- [Caching REST API Response](https://restfulapi.net/caching/)
 	- [Understanding and Implementing ETags in REST APIs](https://medium.com/@reetesh043/understanding-and-implementing-etags-in-rest-apis-659abe0f91ab)
 11. [Spring Boot - Versioning a REST API](https://www.geeksforgeeks.org/spring-boot-versioning-a-rest-api/) - not used for now
+12. [Spring Filters](https://docs.spring.io/spring-framework/reference/web/webmvc/filters.html)
+	- [Add a Servlet, Filter, or Listener to an Application](https://docs.spring.io/spring-boot/how-to/webserver.html#howto.webserver.add-servlet-filter-listener)
+	- [Using Filters in Spring Web Applications](https://springframework.guru/using-filters-in-spring-web-applications/)
+	- [Spring Boot - Servlet Filter](https://www.geeksforgeeks.org/spring-boot-servlet-filter/)

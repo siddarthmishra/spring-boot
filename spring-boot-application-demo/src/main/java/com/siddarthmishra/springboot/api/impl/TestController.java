@@ -16,9 +16,9 @@ public class TestController {
 	@GetMapping("/greet")
 	public ResponseEntity<String> greetWithName(@RequestParam(defaultValue = "World") String name) {
 		String result = "Hello " + name + "!!!";
-		// Using ShallowEtagHeaderFilter bean present in CommonConfiguration.java
+		// Using ShallowEtagHeaderFilter bean present in FilterConfiguration.java
 		return ResponseEntity.ok().body(result);
-		// Without using ShallowEtagHeaderFilter bean present in CommonConfiguration
+		// Without using ShallowEtagHeaderFilter bean present in FilterConfiguration.java
 		// return ResponseEntity.ok().eTag(Integer.toString(result.hashCode())) .body(result);
 	}
 }
