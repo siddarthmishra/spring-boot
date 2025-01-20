@@ -34,3 +34,7 @@
 	- [What is Spring Boot Request Interceptor and How to Use It?](https://medium.com/@aedemirsen/what-is-spring-boot-request-interceptor-and-how-to-use-it-7fd85f3df7f7)
 	- [Unpacking Spring Interceptors](https://medium.com/@ahmed.abdelfaheem/unpacking-spring-interceptors-11808892ed08)
 	- [Spring HandlerInterceptor Example](https://howtodoinjava.com/spring-mvc/spring-intercepting-requests-using-handlerinterceptor-with-example/)
+15. Filters vs. Interceptors
+	- [Spring MVC HandlerInterceptor vs. Filter](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter)
+	- [Spring MVC - Servlet Filter vs Handler Interceptor](https://www.geeksforgeeks.org/spring-mvc-servlet-filter-vs-handler-interceptor/)
+	- [Filter vs. Interceptor in Spring Boot](https://senoritadeveloper.medium.com/filter-vs-interceptor-in-spring-boot-2e49089f682e)
