@@ -24,3 +24,7 @@
 	- [Add a Servlet, Filter, or Listener to an Application](https://docs.spring.io/spring-boot/how-to/webserver.html#howto.webserver.add-servlet-filter-listener)
 	- [Using Filters in Spring Web Applications](https://springframework.guru/using-filters-in-spring-web-applications/)
 	- [Spring Boot - Servlet Filter](https://www.geeksforgeeks.org/spring-boot-servlet-filter/)
+13. How to modify request parameters using Servlet Filters
+	- [Modify request parameters using a servlet filter](https://github.com/briefjudofox/servlet-filter-example/blob/master/README.md#modify-request-parameters-using-a-servlet-filter)
+	- [Safely add / modify Servlet request parameter values](https://www.ocpsoft.org/opensource/how-to-safely-add-modify-servlet-request-parameter-values/)
+	- [Set a Parameter in an HttpServletRequest in Java](https://www.baeldung.com/java-servlet-request-set-parameter)

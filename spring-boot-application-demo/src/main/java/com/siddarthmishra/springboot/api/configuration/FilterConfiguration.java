@@ -23,7 +23,8 @@ public class FilterConfiguration {
 		final FilterRegistrationBean<MyDemoFilter> myDemoFilterRegister = new FilterRegistrationBean<>(myDemoFilter);
 		// Defines the URL pattern for which this filter will be registered against.
 		// myDemoFilterRegister.addUrlPatterns("/*"); // All
-		myDemoFilterRegister.addUrlPatterns("/introducers/*");
+		// myDemoFilterRegister.addUrlPatterns("/introducers/*");
+		myDemoFilterRegister.addUrlPatterns("/greet/*");
 		return myDemoFilterRegister;
 	}
 }
