@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -49,5 +50,10 @@ public class CommonConfiguration {
 		objectMapper.configure(DeserializationFeature.FAIL_ON_IGNORED_PROPERTIES, false);
 		objectMapper.setSerializationInclusion(Include.NON_EMPTY);
 		return objectMapper;
+	}
+
+	@Bean
+	RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 }

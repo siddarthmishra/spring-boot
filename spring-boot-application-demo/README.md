@@ -42,3 +42,9 @@
 	- You can use [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) to generate a custom banner. Copy the generated text and paste it in the banner.txt
 	- [Using Custom Banners in Spring Boot](https://www.baeldung.com/spring-boot-custom-banners)
 	- [How to Create Custom Banners in Spring Boot?](https://www.geeksforgeeks.org/custom-banners-in-spring-boot/)
+17. [Spring RestTemplate](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html#rest-resttemplate)
+	- [The Guide to RestTemplate](https://www.baeldung.com/rest-template)
+	- [Spring – RestTemplate](https://www.geeksforgeeks.org/spring-resttemplate/)
+	- [Understanding RestTemplate in Java Spring: When and How to Use It](https://medium.com/@psdevraye/understanding-resttemplate-in-java-spring-when-and-how-to-use-it-79500987a53c)
+	- [Advantages and Disadvantages of RestTemplate in Java](https://medium.com/@psdevraye/advantages-and-disadvantages-of-resttemplate-in-java-f647a364f091)
+	- [How to use basic authentication with RestTemplate](https://attacomsian.com/blog/resttemplate-basic-authentication)
