@@ -38,3 +38,7 @@
 	- [Spring MVC HandlerInterceptor vs. Filter](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter)
 	- [Spring MVC - Servlet Filter vs Handler Interceptor](https://www.geeksforgeeks.org/spring-mvc-servlet-filter-vs-handler-interceptor/)
 	- [Filter vs. Interceptor in Spring Boot](https://senoritadeveloper.medium.com/filter-vs-interceptor-in-spring-boot-2e49089f682e)
+16. [Customizing the Banner](https://docs.spring.io/spring-boot/reference/features/spring-application.html#features.spring-application.banner)
+	- You can use [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) to generate a custom banner. Copy the generated text and paste it in the banner.txt
+	- [Using Custom Banners in Spring Boot](https://www.baeldung.com/spring-boot-custom-banners)
+	- [How to Create Custom Banners in Spring Boot?](https://www.geeksforgeeks.org/custom-banners-in-spring-boot/)
