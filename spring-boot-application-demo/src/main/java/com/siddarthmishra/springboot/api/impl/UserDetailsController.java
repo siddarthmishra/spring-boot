@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.siddarthmishra.springboot.api.components.AsyncTasks;
 import com.siddarthmishra.springboot.api.constants.CommonConstants;
 import com.siddarthmishra.springboot.api.entity.User;
 import com.siddarthmishra.springboot.api.service.UserDetailsService;
@@ -26,8 +27,11 @@ public class UserDetailsController {
 
 	private UserDetailsService userDetailsService;
 
-	public UserDetailsController(UserDetailsService userDetailsService) {
+	private AsyncTasks asyncTasks;
+
+	public UserDetailsController(UserDetailsService userDetailsService, AsyncTasks asyncTasks) {
 		this.userDetailsService = userDetailsService;
+		this.asyncTasks = asyncTasks;
 	}
 
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -36,7 +40,8 @@ public class UserDetailsController {
 		long t1 = System.currentTimeMillis();
 		// Simulate the time required for user registration.
 		User registeredUser = userDetailsService.registerUser(user);
-		// Registration is successful.
+		// Registration is successful. Send an email.
+		asyncTasks.sendEmail(registeredUser.getEmailId()); // This method will be executed in different thread
 		StringBuilder uri = new StringBuilder(httpServletRequest.getRequestURI()).append(CommonConstants.FORWARD_SLASH)
 				.append(registeredUser.getUserId());
 		ResponseEntity<User> responseEntity = ResponseEntity.created(URI.create(uri.toString())).build();

@@ -48,3 +48,7 @@
 	- [Understanding RestTemplate in Java Spring: When and How to Use It](https://medium.com/@psdevraye/understanding-resttemplate-in-java-spring-when-and-how-to-use-it-79500987a53c)
 	- [Advantages and Disadvantages of RestTemplate in Java](https://medium.com/@psdevraye/advantages-and-disadvantages-of-resttemplate-in-java-f647a364f091)
 	- [How to use basic authentication with RestTemplate](https://attacomsian.com/blog/resttemplate-basic-authentication)
+18. Asynchronous Execution Support in Spring Boot using `@EnableAsync` and `@Async`
+	- [How Does Spring Boot Implement Asynchronous Programming? This Is How Masters Do It!](https://medium.com/javarevisited/how-does-spring-boot-implement-asynchronous-programming-this-is-how-masters-do-it-e89fc9245928)
+	- [SpringBoot @Async: The magic and the gotchas](https://medium.com/@dvikash1001/springboot-async-the-magic-and-the-gotchas-17f9471c6fe4)
+	- [Spring Boot - @Async Annotation](https://www.geeksforgeeks.org/spring-boot-async-annotation/)
