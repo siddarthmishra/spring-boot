@@ -69,4 +69,14 @@ public interface RequestValidator extends ErrorConstants {
 		}
 		return orderByExpiry;
 	}
+
+	public static boolean isValidUserSearchEmailId(String emailId) {
+		boolean isValidEmailId = emailId != null && emailId.trim().length() > 0;
+		return isValidEmailId;
+	}
+
+	public static boolean isValidUserSearchUserId(Integer userId) {
+		boolean isValidUserId = userId != null && userId.intValue() >= 0;
+		return isValidUserId;
+	}
 }
