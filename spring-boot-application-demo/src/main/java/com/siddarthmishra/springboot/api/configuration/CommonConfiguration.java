@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -55,5 +56,10 @@ public class CommonConfiguration {
 	@Bean
 	RestTemplate restTemplate() {
 		return new RestTemplate();
+	}
+
+	@Bean
+	WebClient.Builder webClientBuilder() {
+		return WebClient.builder();
 	}
 }
