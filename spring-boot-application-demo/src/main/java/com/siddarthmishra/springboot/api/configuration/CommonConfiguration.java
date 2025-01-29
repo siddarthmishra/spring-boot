@@ -3,6 +3,7 @@ package com.siddarthmishra.springboot.api.configuration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -12,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.siddarthmishra.springboot.api.dto.PersonDTO;
 import com.siddarthmishra.springboot.api.json.deserializer.LocalDateDeserializer;
 import com.siddarthmishra.springboot.api.json.deserializer.LocalDateTimeDeserializer;
 import com.siddarthmishra.springboot.api.json.serializer.LocalDateSerializer;
@@ -61,5 +63,17 @@ public class CommonConfiguration {
 	@Bean
 	WebClient.Builder webClientBuilder() {
 		return WebClient.builder();
+	}
+
+	@Bean
+	@ConfigurationProperties(prefix = "person.1")
+	PersonDTO person1() {
+		return new PersonDTO();
+	}
+
+	@Bean
+	@ConfigurationProperties(prefix = "person.2")
+	PersonDTO person2() {
+		return new PersonDTO();
 	}
 }

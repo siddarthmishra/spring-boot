@@ -62,3 +62,11 @@
 	- [Spring Boot CommandLineRunner Example](https://mkyong.com/spring-boot/spring-boot-commandlinerunner-example/)
 	- [Spring Boot - CommandLineRunner and ApplicationRunner](https://www.geeksforgeeks.org/spring-boot-commandlinerunner-and-applicationrunner/)
 	- [Spring Boot Runners: CommandLine vs Application](https://javadzone.com/spring-boot-runners-commandline-vs-application/)
+21. [Externalized Configuration](https://docs.spring.io/spring-boot/reference/features/external-config.html)
+	* `@PropertySource`
+	    * [Using `@PropertySource`](https://docs.spring.io/spring-framework/reference/core/beans/environment.html#beans-using-propertysource)
+	    * [Accessing Properties in Spring Boot](https://howtodoinjava.com/spring-boot/properties-with-spring-boot/)
+	    * [How to load custom properties files in Spring Boot](https://mkyong.com/spring-boot/how-to-load-custom-properties-files-in-spring-boot/)
+	* `@ConfigurationProperties`
+	    * [Type-safe Configuration Properties](https://docs.spring.io/spring-boot/reference/features/external-config.html#features.external-config.typesafe-configuration-properties)
+	    * [Guide to @ConfigurationProperties in Spring Boot](https://www.baeldung.com/configuration-properties-in-spring-boot)
