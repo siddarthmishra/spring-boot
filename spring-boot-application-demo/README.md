@@ -58,3 +58,7 @@
 	- [Spring Boot Reactive Programming](https://javatechonline.com/spring-boot-tutorial/#Spring_Boot_Reactive_Programming)
 	- [Mastering WebClient in Spring Boot: When and Why to Use It Over RestTemplate](https://medium.com/@psdevraye/mastering-webclient-in-spring-boot-when-and-why-to-use-it-over-resttemplate-03f0643421dc)
 	- [Transitioning from RestTemplate to WebClient in Spring Boot: A Detailed Guide](https://medium.com/hprog99/transitioning-from-resttemplate-to-webclient-in-spring-boot-a-detailed-guide-4febd21063ba)
+20. [Spring Boot - ApplicationRunner & CommandLineRunner](https://docs.spring.io/spring-boot/reference/features/spring-application.html#features.spring-application.command-line-runner)
+	- [Spring Boot CommandLineRunner Example](https://mkyong.com/spring-boot/spring-boot-commandlinerunner-example/)
+	- [Spring Boot - CommandLineRunner and ApplicationRunner](https://www.geeksforgeeks.org/spring-boot-commandlinerunner-and-applicationrunner/)
+	- [Spring Boot Runners: CommandLine vs Application](https://javadzone.com/spring-boot-runners-commandline-vs-application/)
