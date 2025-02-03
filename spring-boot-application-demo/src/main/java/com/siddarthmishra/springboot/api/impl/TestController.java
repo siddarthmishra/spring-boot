@@ -2,7 +2,9 @@ package com.siddarthmishra.springboot.api.impl;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Function;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,7 +90,10 @@ public class TestController {
 
 	@GetMapping
 	public String getMethodName() {
-		return "Welcome!!!";
+		String additionalMessage = String.format("Thread: %s; bean instance: %s; hashcode: %s",
+				Thread.currentThread().getName(), this, this.hashCode());
+		System.out.println(additionalMessage + "\n");
+		return "Welcome!!!" + " - " + additionalMessage;
 	}
 
 	@GetMapping("/greet")
@@ -181,5 +186,26 @@ public class TestController {
 				.onStatus(HttpStatusCode::is5xxServerError, exceptionFunction)
 				.toBodilessEntity().block();
 		return responseEntity;
+	}
+
+	@GetMapping("/concurrent-welcome")
+	public ResponseEntity<List<String>> triggerConcurrentRequests(HttpServletRequest httpServletRequest) {
+		List<String> listOfWelcome = new CopyOnWriteArrayList<>();
+		String url = buildURL(httpServletRequest, null);
+		Runnable runnableInstance = () -> {
+			String result;
+			for (int i = 1; i <= 50; i++) {
+				result = webClientBuilder.build().get().uri(url).retrieve().bodyToMono(String.class).block();
+				listOfWelcome.add(i + "=>child=>" + result);
+			}
+		};
+		Thread newThread = new Thread(runnableInstance);
+		newThread.start();
+		String result;
+		for (int i = 1; i <= 50; i++) {
+			result = webClientBuilder.build().get().uri(url).retrieve().bodyToMono(String.class).block();
+			listOfWelcome.add(i + "=>main=>" + result);
+		}
+		return ResponseEntity.ok(listOfWelcome);
 	}
 }

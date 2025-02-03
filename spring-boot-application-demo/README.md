@@ -70,3 +70,8 @@
 	* `@ConfigurationProperties`
 	    * [Type-safe Configuration Properties](https://docs.spring.io/spring-boot/reference/features/external-config.html#features.external-config.typesafe-configuration-properties)
 	    * [Guide to @ConfigurationProperties in Spring Boot](https://www.baeldung.com/configuration-properties-in-spring-boot)
+22. Singleton Bean - Concurrent Requests
+	- [How Does the Spring Singleton Bean Serve Concurrent Requests?](https://www.baeldung.com/spring-singleton-concurrent-requests)
+	- [Spring Singleton Bean Behavior for Concurrent Requests.](https://medium.com/@sandaruwanims/spring-singleton-bean-behavior-for-concurrent-requests-2e90f1384eb0)
+	- [3 Ways to tune Apache Tomcat in Spring Boot](https://medium.com/@dharampro/3-ways-to-tune-apache-tomcat-in-spring-boot-891691915cb2)
+	- [Spring Boot Server Properties](https://docs.spring.io/spring-boot/appendix/application-properties/index.html#appendix.application-properties.server)
